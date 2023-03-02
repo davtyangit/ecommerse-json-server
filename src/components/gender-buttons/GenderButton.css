@@ -1,0 +1,79 @@
+/* GENDER BUTTONS */
+
+.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.choose_gender {
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+  position: absolute;
+  height: 80px;
+  justify-content: space-between;
+}
+
+.choose_btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-row {
+  background: #ffffff;
+  z-index: 0;
+  border-radius: 10px;
+  height: 35px;
+  overflow: hidden;
+  position: relative;
+  width: 122px;
+}
+
+.form-input {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.form-input::before {
+  content: '';
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.form-input:checked::before {
+  background: seagreen;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.form-input::after {
+  content: '';
+  cursor: pointer;
+  height: 10px;
+  border-radius: 50px;
+  border: 5px solid red;
+  left: 10%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 10px;
+}
+
+.form-input:checked::after {
+  border: 5px solid rgb(17, 221, 17);
+}
+
+.form-label {
+  font-size: 1rem;
+  margin-left: 10px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.form-input:checked ~ .form-label {
+  color: #ffffff;
+}

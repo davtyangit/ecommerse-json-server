@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+body {
+  max-width: 1366px;
+  margin: 0 auto;
+  background-color: #e6e6e6;
+}
+
+.container {
+  max-width: 1264px;
+  margin: 0 auto;
+}
+
+.product_modal {
+  width: 300px;
+}
+
+button,
+.close_icon {
+  cursor: pointer;
+}
+
+.close_icon {
+  cursor: pointer;
+}
+
+select {
+  margin-top: 20px;
+  outline: none;
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.281);
+  font-family: 'Arial';
+  height: 30px;
+}
+
+select option {
+  background-color: #e6e6e66c;
+  font-family: 'Arial';
+}
+
+select:focus > option:checked {
+  padding: 5px;
+  background: #00000025 !important;
+}
+
+.uploaded_image {
+  height: 250px;
+  object-fit: contain;
+  width: 250px;
+}
+
+.modal_header b {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+  font-size: 20px;
+}

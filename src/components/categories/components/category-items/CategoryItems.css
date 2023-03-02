@@ -1,0 +1,238 @@
+.categories_panel {
+  align-items: center;
+  padding-left: 5px;
+  width: 1066px;
+  height: 110px;
+  display: flex;
+  overflow-x: auto;
+}
+
+.categories_panel::-webkit-scrollbar {
+  height: 5px;
+}
+
+.categories_panel::-webkit-scrollbar-thumb {
+  height: 5px;
+  border-radius: 5px;
+  background-color: seagreen;
+}
+
+.categories_panel::-webkit-scrollbar-thumb:hover {
+  background-color: #3a3a3a9a;
+  cursor: pointer;
+}
+
+.categories_panel::-webkit-scrollbar:vertical {
+  display: none;
+}
+
+.card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  margin-right: 20px;
+  height: 80px;
+  background: #ffffff;
+  border-radius: 5px;
+  transition: 0.1s;
+}
+
+.active {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 140px;
+  margin-right: 20px;
+  height: 80px;
+  background: red;
+  border-radius: 5px;
+  transition: 0.1s;
+}
+
+.card:hover {
+  transition: 0.3s;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.card:last-child {
+  margin-right: 0px;
+}
+
+.card img {
+  margin-top: 2px;
+  height: 55px;
+  padding-top: 10px;
+  object-fit: cover;
+}
+
+.card p {
+  color: gray;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Arial';
+}
+
+/*  */
+
+.payment-methods {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.payment-methods:after {
+  content: '';
+  clear: both;
+}
+
+.payment-method {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80px;
+  width: 140px;
+  border: none;
+}
+
+.payment_methods {
+  visibility: hidden;
+}
+
+.payment-method label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  bottom: 1px;
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  left: 1px;
+  position: absolute;
+  right: 1px;
+  text-indent: 100%;
+  top: 1px;
+  white-space: nowrap;
+}
+
+.payment-method + .payment-method {
+  margin-left: 25px;
+}
+
+.payment-methods input:checked + label {
+  outline: 3px solid rgb(49, 224, 125);
+  border-radius: 5px;
+}
+
+.payment-methods input:checked + label:after {
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8dGl0bGU+Y2hlY2tlZDwvdGl0bGU+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iY2hlY2tlZCIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPHBhdGggZD0iTTEwLjAwNDkyODUsMjAgQzE1LjQ5NTMxNzksMjAgMjAsMTUuNDkzMDk2NiAyMCwxMCBDMjAsNC40OTcwNDE0MiAxNS40OTUzMTc5LDAgOS45OTUwNzE0NiwwIEM0LjUwNDY4MjExLDAgMCw0LjQ5NzA0MTQyIDAsMTAgQzAsMTUuNDkzMDk2NiA0LjUwNDY4MjExLDIwIDEwLjAwNDkyODUsMjAgWiIgZmlsbD0iIzIxQjREMCI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNOS4wNDQ0MDE1NCwxNiBDOC41OTA3MzM1OSwxNiA4LjIzMzU5MDczLDE1Ljc3NDM1OSA3Ljk1MzY2Nzk1LDE1LjQyNTY0MSBMNS4zMzc4Mzc4NCwxMi4xNjQxMDI2IEM1LjA5NjUyNTEsMTEuODc2OTIzMSA1LDExLjYxMDI1NjQgNSwxMS4yOTIzMDc3IEM1LDEwLjYyNTY0MSA1LjUzMDg4ODAzLDEwLjA5MjMwNzcgNi4xNDg2NDg2NSwxMC4wOTIzMDc3IEM2LjUwNTc5MTUxLDEwLjA5MjMwNzcgNi43ODU3MTQyOSwxMC4yNTY0MTAzIDcuMDM2Njc5NTQsMTAuNTUzODQ2MiBMOS4wMjUwOTY1MywxMy4wNTY0MTAzIEwxMi44MTg1MzI4LDYuNjg3MTc5NDkgQzEzLjA5ODQ1NTYsNi4yMzU4OTc0NCAxMy40MTY5ODg0LDYgMTMuODMyMDQ2Myw2IEMxNC40NDAxNTQ0LDYgMTUsNi40ODIwNTEyOCAxNSw3LjE0ODcxNzk1IEMxNSw3LjQwNTEyODIxIDE0LjkwMzQ3NDksNy42OTIzMDc2OSAxNC43MzkzODIyLDcuOTU4OTc0MzYgTDEwLjEyNTQ4MjYsMTUuMzY0MTAyNiBDOS44NjQ4NjQ4NiwxNS43NTM4NDYyIDkuNDY5MTExOTcsMTYgOS4wNDQ0MDE1NCwxNiBaIiBpZD0iUGF0aCIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+);
+  bottom: -10px;
+  content: '';
+  display: inline-block;
+  height: 20px;
+  position: absolute;
+  right: -10px;
+  width: 20px;
+}
+
+@-moz-document url-prefix() {
+  .payment-methods input:checked + label:after {
+    bottom: 0;
+    right: 0;
+    background-color: se;
+  }
+}
+
+/*  */
+/* Dropup Button */
+.dropbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropup content */
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropup content (Hidden by Default) */
+.dropup-content {
+  display: none;
+  position: absolute;
+  bottom: 60px;
+  left: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  min-width: 80px;
+  padding: 3px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+.remove {
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.remove:hover {
+  background-color: rgb(173, 10, 10);
+  transition: 0.2s;
+}
+
+.show:hover {
+  background-color: rgb(13, 97, 49);
+  transition: 0.2s;
+}
+
+.show {
+  background-color: seagreen;
+  border: none;
+  border-radius: 5px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+/* Links inside the dropup */
+.dropup-content button {
+  margin: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Change color of dropup links on hover */
+.dropup-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropup menu on hover */
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+/* Change the background color of the dropup button when the dropup content is shown */
+.dropup:hover .dropbtn {
+  background-color: #2980b9;
+}
+
+.adult_sign {
+  position: absolute;
+  bottom: 48px;
+  width: 30px !important;
+  height: 40px !important;
+  z-index: 10;
+  right: 106px;
+}

@@ -1,0 +1,132 @@
+{
+  "products": [
+    {
+      "category": "Flowers",
+      "gender": "Girl",
+      "imageUrl": "http://res.cloudinary.com/dth7rq73s/image/upload/v1677799852/ryptk73kcmpjvaixvjwa.jpg",
+      "price": "500",
+      "artikul": "Tulips",
+      "id": 1
+    },
+    {
+      "category": "Flowers",
+      "gender": "Girl",
+      "imageUrl": "http://res.cloudinary.com/dth7rq73s/image/upload/v1677799871/sverywf7mhd68n5m9pkj.jpg",
+      "price": "450",
+      "artikul": "Chamomile",
+      "id": 2
+    },
+    {
+      "category": "Flowers",
+      "gender": "Girl",
+      "imageUrl": "http://res.cloudinary.com/dth7rq73s/image/upload/v1677799946/gnxfngbsz88umjvjp8xb.jpg",
+      "price": "280",
+      "artikul": "Marigold",
+      "id": 3
+    },
+    {
+      "category": "Cosmetics",
+      "gender": "Girl",
+      "imageUrl": "http://res.cloudinary.com/dth7rq73s/image/upload/v1677800023/oozbxgelys9d3jee9lef.png",
+      "price": "482",
+      "artikul": "Manicure",
+      "id": 4
+    },
+    {
+      "category": "Cosmetics",
+      "gender": "Girl",
+      "imageUrl": "http://res.cloudinary.com/dth7rq73s/image/upload/v1677800047/bfblfk8vmna6tqxt2ztv.png",
+      "price": "700",
+      "artikul": "Cream",
+      "id": 5
+    },
+    {
+      "category": "Cigarettes",
+      "gender": "Boy",
+      "imageUrl": "http://res.cloudinary.com/dth7rq73s/image/upload/v1677800111/b1sqp5mnqzcadin3eht2.jpg",
+      "price": "50",
+      "artikul": "Davidoff",
+      "id": 6
+    },
+    {
+      "category": "Cigarettes",
+      "gender": "Boy",
+      "imageUrl": "http://res.cloudinary.com/dth7rq73s/image/upload/v1677800129/ugfuauaasdjr7sttsux5.jpg",
+      "price": "70",
+      "artikul": "Black",
+      "id": 7
+    },
+    {
+      "category": "Cigarettes",
+      "gender": "Boy",
+      "imageUrl": "http://res.cloudinary.com/dth7rq73s/image/upload/v1677800140/k38dzddostt1nbb49ize.png",
+      "price": "120",
+      "artikul": "Parliament",
+      "id": 8
+    },
+    {
+      "category": "Alchohol",
+      "gender": "Boy",
+      "imageUrl": "http://res.cloudinary.com/dth7rq73s/image/upload/v1677800183/dq3ilphdbamnsrghqcnl.png",
+      "price": "110",
+      "artikul": "Wine",
+      "id": 9
+    },
+    {
+      "category": "Alchohol",
+      "gender": "Boy",
+      "imageUrl": "http://res.cloudinary.com/dth7rq73s/image/upload/v1677800308/dgygpfynkw6viq9dnets.png",
+      "price": "200",
+      "artikul": "Whisky ",
+      "id": 10
+    },
+    {
+      "category": "Rosary",
+      "gender": "Boy",
+      "imageUrl": "http://res.cloudinary.com/dth7rq73s/image/upload/v1677800387/nbul20eu7myfsmhpbwuw.jpg",
+      "price": "80",
+      "artikul": "Number 1",
+      "id": 11
+    },
+    {
+      "category": "Rosary",
+      "gender": "Boy",
+      "imageUrl": "http://res.cloudinary.com/dth7rq73s/image/upload/v1677800403/tpqqqelhc2avrmcpbaxx.png",
+      "price": "150",
+      "artikul": "Arm",
+      "id": 12
+    }
+  ],
+  "categories": [
+    {
+      "category": "Flowers",
+      "gender": "Female",
+      "imageUrl": "http://res.cloudinary.com/dth7rq73s/image/upload/v1677799824/mzdingwk7vnxpn2avjdv.png",
+      "id": 1
+    },
+    {
+      "category": "Cosmetics",
+      "gender": "Female",
+      "imageUrl": "http://res.cloudinary.com/dth7rq73s/image/upload/v1677799973/ob4ci2fggdukao02owaq.png",
+      "id": 2
+    },
+    {
+      "category": "Cigarettes",
+      "gender": "Male",
+      "imageUrl": "http://res.cloudinary.com/dth7rq73s/image/upload/v1677800093/r9ftz43rhljtij7tiy89.jpg",
+      "id": 3
+    },
+    {
+      "category": "Alchohol",
+      "gender": "Male",
+      "imageUrl": "http://res.cloudinary.com/dth7rq73s/image/upload/v1677800171/kmrif4gdnedgakbce3gy.png",
+      "id": 4
+    },
+    {
+      "category": "Rosary",
+      "gender": "Male",
+      "imageUrl": "http://res.cloudinary.com/dth7rq73s/image/upload/v1677800374/xe9mvz3fqefgvabfdsf5.png",
+      "id": 5
+    }
+  ]
+}
