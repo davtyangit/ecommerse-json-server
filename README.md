@@ -1,4 +1,5 @@
-To run, first type npm i in terminal to fetch all packages, then npm run server to open server and npm run dev to open in browser
+To run, first type npm i in terminal to fetch all packages, then npm run server to open server and npm run dev to open in browser․
+Products e-commerce website, created with the help of JSON-SERVER. Ability to add categories with modal, add products to them, filter by gender, delete. Ability to receive and display, search by name, price, etc
 
 
 ![image](https://user-images.githubusercontent.com/121361500/222594087-7fd63ba8-848b-41d5-ac54-e2ccbcc75032.png)
